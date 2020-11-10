@@ -4,12 +4,12 @@
 \alias{animal_info}
 \title{Get information about an animal}
 \usage{
-learnfun::animal_info(name,, where, age)
+learnfun::animal_info(name, where, age)
 }
 \arguments{
 \item{name}{\link{character} The animal's name}
 
-\item{where}{\link{chracter} The location where the animal lives}
+\item{where}{\link{character} The location where the animal lives}
 
 \item{lifespan}{\link{numeric} The lifespan of the animal}
 }

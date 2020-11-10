@@ -60,13 +60,13 @@ number_and_word <- function(number = NULL, word = NULL){
 #'
 #' @param name [character] The animal's name
 #'
-#' @param where [chracter] The location where the animal lives
+#' @param where [character] The location where the animal lives
 #'
 #' @param lifespan [numeric] The lifespan of the animal
 #'
 #' @usage
 #'
-#' learnfun::animal_info(name,, where, age)
+#' learnfun::animal_info(name, where, age)
 #'
 #' @return
 #'
@@ -77,17 +77,18 @@ number_and_word <- function(number = NULL, word = NULL){
 #' @examples
 animal_info <- function(name = NULL, where = NULL, lifespan = NULL){
 
-  cat(name," live in ",where, "and live for ", lifespan, " years\n\n")
 
-  tibble::tibble(
+
+x =   tibble::tibble(
     name = name,
     where = where,
     lifespan_years = lifespan,
     lifespan_months = lifespan * 11
   )
 
+  cat(name," live in ",where, "and live for ", lifespan, " years\n\n")
 
-
+  return(x)
 
 }
 
